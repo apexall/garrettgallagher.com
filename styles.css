@@ -1,0 +1,70 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #ffccff;
+}
+
+header {
+    background-color: #ff99cc;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff66cc;
+}
+
+/* Sparkle section */
+.sparkle-section {
+    background-color: #ffff99;
+    text-align: center;
+    padding: 30px;
+}
+
+.sparkle-image {
+    width: 200px;
+    height: auto;
+}
+
+/* Pony gallery */
+.pony-gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pony-card {
+    text-align: center;
+}
+
+.pony-card img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ff66cc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
