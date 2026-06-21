@@ -1,0 +1,179 @@
+/* ============================================
+   CYBER SHACK — a totally rad 90's style sheet
+   ============================================ */
+
+body {
+  margin: 0;
+  padding: 20px 10px;
+  background-image: url("images/bg_stars.png");
+  background-repeat: repeat;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #ffff00;
+}
+a:visited {
+  color: #ff66ff;
+}
+a:hover {
+  color: #00ff00;
+  text-decoration: underline wavy;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: #0a0028;
+  border: 4px ridge #ff00ff;
+  padding: 12px;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 3px outset #00ffff;
+}
+
+.divider {
+  width: 100%;
+  height: 10px;
+  background-image: url("images/divider.png");
+  background-repeat: repeat-x;
+  border: none;
+  margin: 14px 0;
+}
+
+/* marquee-style scrolling text (CSS animation, no JS needed) */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 2px dashed #ffff00;
+  background: #190033;
+  padding: 6px 0;
+  margin-bottom: 14px;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 14s linear infinite;
+  color: #39ff14;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+nav.button-bar {
+  text-align: center;
+  margin: 16px 0;
+}
+nav.button-bar img {
+  margin: 4px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+nav.button-bar img:active {
+  filter: brightness(1.4);
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #14002b;
+  border: 3px double #00ffff;
+}
+.content-table td {
+  border: 1px solid #5500aa;
+  padding: 10px;
+  vertical-align: top;
+}
+.content-table th {
+  background-color: #330066;
+  color: #ffff00;
+  padding: 8px;
+  border: 1px solid #5500aa;
+}
+
+h1, h2, h3 {
+  text-shadow: 2px 2px 0 #ff00ff;
+  color: #ffff00;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+  color: #ff0000;
+  font-weight: bold;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.construction-strip {
+  width: 100%;
+  height: 36px;
+  background-image: url("images/construction_strip.png");
+  background-repeat: repeat-x;
+  border: 2px solid #000;
+  margin: 12px 0;
+}
+
+.sidebar {
+  width: 180px;
+}
+
+.counter-box {
+  text-align: center;
+  margin-top: 18px;
+}
+.counter-box img {
+  image-rendering: pixelated;
+}
+.counter-box p {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: #00ff00;
+  margin: 4px 0 0 0;
+}
+
+.webring, .badges {
+  text-align: center;
+  margin: 14px 0;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: #aaaaff;
+  margin-top: 18px;
+}
+
+.guestbook-entry {
+  border-bottom: 1px dotted #5500aa;
+  padding: 8px 0;
+}
+.guestbook-entry .name {
+  color: #00ff00;
+  font-weight: bold;
+}
+.guestbook-entry .date {
+  color: #888888;
+  font-size: 11px;
+}
+
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.layout td {
+  vertical-align: top;
+}

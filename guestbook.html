@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>:: CYBER SHACK :: Sign My Guestbook ::</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <img src="images/banner.png" alt="Cyber Shack banner" class="banner">
+
+  <div class="marquee"><span>*** SIGN THE GUESTBOOK *** TELL ME WHAT YOU THINK *** NO FLAMES PLEASE *** ***</span></div>
+
+  <nav class="button-bar">
+    <a href="index.html"><img src="images/btn_home.png" alt="Home"></a>
+    <a href="about.html"><img src="images/btn_about.png" alt="About"></a>
+    <a href="links.html"><img src="images/btn_links.png" alt="Links"></a>
+    <a href="guestbook.html"><img src="images/btn_guestbook.png" alt="Guestbook"></a>
+  </nav>
+
+  <hr class="divider">
+
+  <table class="content-table">
+    <tr><th>:: Sign My Guestbook ::</th></tr>
+    <tr><td>
+      <p>This is a <strong>mock-up form</strong> for demo purposes &mdash;
+      it isn't wired up to a server, so messages typed here won't actually
+      be saved. To make it work for real, you'd hook the form up to a
+      backend or a free form service.</p>
+
+      <form onsubmit="alert('This is a demo form — no message was actually sent!'); return false;">
+        <table class="layout">
+          <tr><td style="width:120px;">Name:</td><td><input type="text" name="name" style="width:100%;"></td></tr>
+          <tr><td>Email:</td><td><input type="email" name="email" style="width:100%;"></td></tr>
+          <tr><td>Message:</td><td><textarea name="message" rows="4" style="width:100%;"></textarea></td></tr>
+        </table>
+        <p style="text-align:center;">
+          <button type="submit">Sign It!</button>
+          <button type="reset">Clear Form</button>
+        </p>
+      </form>
+    </td></tr>
+  </table>
+
+  <hr class="divider">
+
+  <table class="content-table">
+    <tr><th>:: Recent Entries ::</th></tr>
+    <tr><td>
+      <div class="guestbook-entry">
+        <span class="name">xXskaterboi98Xx</span> <span class="date">06/20/96</span>
+        <p>radical page dude, the marquee made me dizzy in a good way</p>
+      </div>
+      <div class="guestbook-entry">
+        <span class="name">tabby_cat_lover</span> <span class="date">06/18/96</span>
+        <p>love the starfield background!! reminds me of my old geocities page :)</p>
+      </div>
+      <div class="guestbook-entry">
+        <span class="name">webmaster_greg</span> <span class="date">06/12/96</span>
+        <p>nice use of tables for layout. very clean code under the hood.</p>
+      </div>
+    </td></tr>
+  </table>
+
+  <hr class="divider">
+  <footer>
+    &copy; 1996 Cyber Shack. All rights reserved.<br>
+    <a href="index.html">&laquo; Back to Home</a>
+  </footer>
+
+</div>
+</body>
+</html>
